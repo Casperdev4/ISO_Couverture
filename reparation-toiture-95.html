@@ -279,11 +279,20 @@
             <div class="icimg">
                 <img src="couvreur_95.png" alt="couvreur autour de moi">
             </div>
-            <form action="traitement.php" method="post" onsubmit="return validateForm()">
+            <form action="https://formsubmit.co/webprime91@hotmail.com" method="POST" onsubmit="return validateForm()">
+                <!-- Honeypot anti-spam -->
+                <div class="hp-wrap" style="display:none;">
+                    <label for="website">Votre site web :</label>
+                    <input type="text" id="website" name="website" autocomplete="off">
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://iso-couvreur-95.fr/">
+                <input type="hidden" name="_cc" value="lisocouverture@gmail.com">
+                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
                 <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="telephone" required>
+                <input type="tel" id="tel" name="telephone" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="REPARATION TOITURE">REPARATION TOITURE</option>
