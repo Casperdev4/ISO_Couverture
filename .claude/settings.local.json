@@ -4,7 +4,9 @@
       "Bash(ls:*)",
       "Bash(python update_forms.py:*)",
       "Bash(python3:*)",
-      "Bash(py update_forms.py:*)"
+      "Bash(py update_forms.py:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
